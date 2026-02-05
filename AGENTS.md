@@ -1,12 +1,12 @@
 # Repository Guidelines
 
-## Project Structure & Module Organization
+## Project Structure & Module Organization.
 
 - `main.py` contains the environment health check CLI and is the primary entry point.
 - `test.py` is currently empty and can be repurposed or replaced by a `tests/` directory as the test suite grows.
 - Keep any new modules small and focused (for example, `checks/` for individual health checks) and import them from `main.py`.
 
-## Build, Test, and Development Commands
+## Build, Test, and Development Commands.
 
 - `python main.py` runs the core health checks (Python version, pip, venv, filesystem, subprocess).
 - `python main.py --network` adds a lightweight network check to `pypi.org`.
